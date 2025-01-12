@@ -12,6 +12,7 @@
 }
 
 body {
+    /*cursor: none;*/
     margin: 0;
     font-family: var(--font-primary), sans-serif;
     background: var(--main-bg);
@@ -24,6 +25,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     scroll-behavior: smooth;
+    perspective: 1000px; /* Add perspective for 3D effect */
 }
 
 .title {
@@ -61,9 +63,9 @@ body {
 }
 
 .image:hover {
-    transform: scale(1.15) rotate(5deg);
+    transform: scale(1.15) rotateY(20deg); /* 3D rotate on hover */
     border-color: var(--secondary-color);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8); /* Adjusted shadow for 3D */
 }
 
 .credits {
@@ -88,6 +90,7 @@ body {
     max-width: 1200px;
     margin: 20px auto;
     animation: fadeInUp 1.5s ease-in-out;
+    transform-style: preserve-3d; /* Key for 3D on children */
 }
 
 .node {
@@ -105,6 +108,7 @@ body {
     font-size: 1.2rem;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
     transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.3s ease;
+    transform-style: preserve-3d; /* Needed for inner 3d effects*/
 }
 
 .node::before {
@@ -121,11 +125,12 @@ body {
     z-index: -1;
     filter: blur(8px);
     opacity: 0.7;
+    transform: translateZ(-10px); /* Creates depth */
 }
 
 .node:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    transform: translateY(-10px) scale(1.05) rotateX(10deg); /* 3D rotate on hover */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8); /* Adjusted shadow for 3D */
     background-color: rgba(255, 255, 255, 0.3);
 }
 
