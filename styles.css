@@ -31,40 +31,41 @@
     margin-top: -650px; 
 }
 
-.mind-map {
-    position: relative;
-    text-align: center;
-}
-
-.node {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    background-color: #004cff;
+body {
     color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.branch {
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+}
+.mind-map {
+    display: flex;
     flex-direction: column;
-    margin-top: 10px;
-    position: relative;
+    align-items: center;
 }
-
-.branch::before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    width: 5px;
-    height: 10px;
-    background-color: #000;
+.node {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgb(72, 72, 72);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
-
-.branch .node + .node {
-    margin-left: 20px;
+.branch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.branch .node {
+    margin: 10px;
+}
+.line {
+    width: 2px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
 }
