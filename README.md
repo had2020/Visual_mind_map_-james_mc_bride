@@ -1,5 +1,7 @@
 # Mind-Map of James McBride
 
+https://had2020.github.io/Visual_mind_map_-james_mc_bride/  
+
 # 🎨 Interactive Mind-Map: James McBride's Life & Legacy
 
 This project showcases a stunning **interactive mind-map** of James McBride's life, career, themes, awards, and influences. Dive into his biography and legacy through a cutting-edge, visually appealing web experience.
