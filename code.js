@@ -1,4 +1,4 @@
-alert("This Website and Painting, took a lot of hours 🕦 to code and draw, a hopfully, it does James McBride well! - Hadrian Lazic 👍");
+alert("This Website and Painting, took a lot of hours 🕦 to code and draw, hopfully, it does James McBride well! - Hadrian Lazic 👍");
 
 const nodes = document.querySelectorAll('.node');
 
