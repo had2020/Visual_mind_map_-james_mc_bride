@@ -1,3 +1,70 @@
 :root {
+    background-color: #333;
+}
+
+.title {
     text-align: center;
+    color: white;
+}
+
+.image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    position: relative; 
+    z-index: 10;
+    background: rgb(45, 99, 213); 
+    padding: 20px;
+    border: 5px solid blue;
+    border-radius: 200px;
+}
+
+.under {
+    color: white;
+    position: relative; 
+    z-index: 5; 
+    background: rgb(72, 72, 72);
+    padding: 20px;
+    margin-top: -650px; 
+}
+
+.mind-map {
+    position: relative;
+    text-align: center;
+}
+
+.node {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #004cff;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.branch {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 10px;
+    position: relative;
+}
+
+.branch::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 5px;
+    height: 10px;
+    background-color: #000;
+}
+
+.branch .node + .node {
+    margin-left: 20px;
 }
